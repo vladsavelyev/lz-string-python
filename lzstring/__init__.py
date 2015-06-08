@@ -637,7 +637,7 @@ class LZString(object):
                 enlargeIn = pow(2, numBits)
                 numBits += 1
 
-    def decompresFromBase64(self, iinput):
+    def decompressFromBase64(self, iinput):
         if iinput is None:
             return ''
 

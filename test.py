@@ -34,8 +34,8 @@ if __name__ == '__main__':
     print()
 
     print('Decompress from base64:')
-    print('result:         ' + x.decompresFromBase64(base2))
-    print('result from js: ' + x.decompresFromBase64(jsLzStringBase64))
+    print('result:         ' + x.decompressFromBase64(base2))
+    print('result from js: ' + x.decompressFromBase64(jsLzStringBase64))
 
     print()
 
@@ -52,4 +52,4 @@ if __name__ == '__main__':
     print()
 
     print('Decompress json from base64:')
-    pprint.pprint(json.loads(x.decompresFromBase64(jsLzStringBase64Json)))
+    pprint.pprint(json.loads(x.decompressFromBase64(jsLzStringBase64Json)))
