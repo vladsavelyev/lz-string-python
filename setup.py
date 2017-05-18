@@ -30,5 +30,5 @@ setup(
     'Programming Language :: Python :: 3.2',
     'Programming Language :: Python :: 3.3',
     ],
-    install_requires=['future'],
+    install_requires=['future>=0.14.0'],
 )
