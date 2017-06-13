@@ -527,12 +527,18 @@ class LZString(object):
             power = 1
 
             while power != maxpower:
-                resb = data_val & data_position
+                if data_val is not None:
+                    resb = data_val & data_position
+                else:
+                    resb = 0
                 data_position >>= 1
 
                 if data_position == 0:
                     data_position = 32768
-                    data_val = ord(data_string[data_index])
+                    if data_index < len(data_string):
+                        data_val = ord(data_string[data_index])
+                    else:
+                        data_val = None
                     data_index += 1
 
                 bits |= (1 if resb > 0 else 0) * power
@@ -555,12 +561,18 @@ class LZString(object):
             power = 1
 
             while power != maxpower:
-                resb = data_val & data_position
+                if data_val is not None:
+                    resb = data_val & data_position
+                else:
+                    resb = 0
                 data_position >>= 1
 
                 if data_position == 0:
                     data_position = 32768
-                    data_val = ord(data_string[data_index])
+                    if data_index < len(data_string):
+                        data_val = ord(data_string[data_index])
+                    else:
+                        data_val = None
                     data_index += 1
 
                 bits |= (1 if resb > 0 else 0) * power
