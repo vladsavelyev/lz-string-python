@@ -6,7 +6,7 @@ long_description = io.open('README.rst', encoding='utf8').read()
 
 setup(
   name='lzstring',
-  version='1.0.3',
+  version='1.0.4',
   description='lz-string for python',
   author='Geza Kovacs',
   author_email='geza0kovacs@gmail.com',
