@@ -16,6 +16,7 @@ setup(
   long_description=long_description,
   url='https://github.com/gkovacs/lz-string-python',
   download_url='https://github.com/gkovacs/lz-string-python',
+  keywords=['lz-string', 'lzstring', 'compression'],
   classifiers=[
     'Development Status :: 3 - Alpha',
     'Intended Audience :: Developers',
