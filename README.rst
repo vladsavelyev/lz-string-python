@@ -11,7 +11,7 @@ Example
 
   >>> import lzstring
   >>> x = lzstring.LZString()
-  >>> compressed = x.compressToBase64(u'你好') # 'gbyl9NIA'
+  >>> compressed = x.compressToBase64(u'你好') # 'gbyl9NI='
   >>> x.decompressFromBase64(compressed) # '你好'
 
 Installation
